@@ -1,13 +1,14 @@
-.App {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: gray;
-
+    flex-wrap: wrap;
+    background-color: cadetblue;
+    border-radius: 10px;
 }
-.buttonsBlock{
-
+.controlPanelContainer{
+    background-color: darkslategray;
 }
 .counter{
 

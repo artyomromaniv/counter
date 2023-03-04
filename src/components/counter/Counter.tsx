@@ -73,7 +73,7 @@ export const Counter = () => {
 
 
     return (
-        <div className={s.App}>
+        <div className={s.container}>
             <div className={s.settingsCounterBlock}>
                 <SettingsCounter
                     storage={storage}
@@ -90,7 +90,7 @@ export const Counter = () => {
                     error={error}
                 />
             </div>
-            <div className={s.buttonsBlock}>
+            <div className={s.controlPanelContainer}>
                 <ControlPanel
                     incCounter={incCounter}
                     decCounter={decCounter}
