@@ -46,9 +46,9 @@ export const SettingsCounter = (props: SettingsCounterPropsType) => {
         let newStorageValue = {
             MAX_VALUE: 5,
             START_VALUE: 0,
-            STEP: 1
+            STEP_VALUE: 1
         }
-        //props.changeSettings(newStorageValue)
+        props.changeSettings(newStorageValue)
     }
 
     const inputStartClass = newStorage.START_VALUE >= newStorage.MAX_VALUE ? s.errorInput : s.input
