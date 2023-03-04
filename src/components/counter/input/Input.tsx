@@ -13,6 +13,7 @@ export const Input = (props: InputPropsType) => {
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         props.callback(e.currentTarget.value)
     }
+
     return (
         <div className={s.inputs}>
             <input

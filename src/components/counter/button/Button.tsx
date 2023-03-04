@@ -15,7 +15,13 @@ export const Button = (props: ButtonPropsType) => {
     }
     return (
         <div className={s.buttons}>
-            <button className={s.btn} onClick={onClickHandler} disabled={props.disabled}>{props.title}</button>
+            <button
+                className={s.btn}
+                onClick={onClickHandler}
+                disabled={props.disabled}
+            >
+                {props.title}
+            </button>
         </div>
     )
 }
