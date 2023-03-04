@@ -1,11 +1,11 @@
 .container{
-    margin: 10px auto;
+    margin: 5px auto;
     background-color: white;
-    width: 300px;
+    min-width: 40vh;
     border:  1px solid black;
     border-radius: 5px;
     align-items: center;
-    padding: 5px;
+   padding: 5px;
 }
 .containerEnd{
     margin: 10px auto;
