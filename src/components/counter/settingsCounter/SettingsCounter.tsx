@@ -50,16 +50,14 @@ export const SettingsCounter = (props: SettingsCounterPropsType) => {
         }
         props.changeSettings(newStorageValue)
     }
-    const changeTheme = () => {
 
-    }
 
     const inputStartClass = newStorage.START_VALUE >= newStorage.MAX_VALUE ? s.errorInput : s.input
     const inputMaxClass = newStorage.MAX_VALUE <= newStorage.START_VALUE ? s.errorInput : s.input
     const inputStepClass = (newStorage.STEP_VALUE < 1) || (newStorage.MAX_VALUE - newStorage.START_VALUE) % newStorage.STEP_VALUE !== 0 ? s.errorInput : s.input
+
     return (
         <div className={s.container}>
-            <Button title={'Change theme'} callback={changeTheme}/>
             <label>Enter start value:</label>
             <input
                 type={'number'}
